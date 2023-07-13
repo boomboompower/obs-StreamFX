@@ -165,6 +165,6 @@ jobs:
     
     - uses: actions/upload-artifact@v3
       with:
-        name: ${{ env.CMAKE_BUILD_TYPE }}
+        name: "${{ matrix.name }} (${{ matrix.compiler }})"
         path: build/ci
 
